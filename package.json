@@ -1,0 +1,24 @@
+{
+  "name": "kazoo",
+  "version": "0.0.1",
+  "description": "New theme for kazoo dashboard",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vwish/kazoo-ui.git"
+  },
+  "keywords": [
+    "kazoo",
+    "theme",
+    "dashboard"
+  ],
+  "author": "Manjeet",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vwish/kazoo-ui/issues"
+  },
+  "homepage": "https://github.com/vwish/kazoo-ui#readme"
+}
