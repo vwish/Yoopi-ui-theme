@@ -20,7 +20,7 @@ winkstart.module('core', 'linknav', {
         },
 
         targets: {
-            link_nav: '#ws-topbar .links'
+            link_nav: '#secondarnav .links'
         }
     },
 
@@ -119,7 +119,7 @@ winkstart.module('core', 'linknav', {
             if(topbar.data('nb') > 6) {
                 var tmp = 140*nb;
                 topbar.css({
-                    'min-width': '+= ' + tmp
+                    // 'min-width': '+= ' + tmp
                 });
             }
 

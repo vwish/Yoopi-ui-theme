@@ -110,10 +110,10 @@
                     height -= ($(selectors[i]).position() || {}).top || 0;
                 }
                 height += 'px';
-                $('.list-panel-anchor').css({
-                    'height': height,
-                    'min-height': height
-                });
+                // $('.list-panel-anchor').css({
+                //     'height': height,
+                //     'min-height': height
+                // });
 
                 var thisSp = $('.list-panel-anchor').jScrollPane({
                     verticalDragMaxHeight: 15

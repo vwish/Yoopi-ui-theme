@@ -100,7 +100,7 @@ winkstart.module('core', 'layout', {
             if(winkstart.config.hide_powered) {
                 $('#powered', layout_html).remove();
             }
-
+             
             $('#loading').ajaxStart(function(){
                 $('#loading .close-button').hide();
                 $(this).show();
@@ -118,6 +118,11 @@ winkstart.module('core', 'layout', {
                     clearTimeout(timeout);
                 }
             });
+// add
+  $( ".navbar-brand" ).click(function() { 
+    $('body').toggleClass( "collapsed-sidebar");
+});
+// end 
 
             $('#loading .close-button').click(function() {
                 $('#loading').hide();

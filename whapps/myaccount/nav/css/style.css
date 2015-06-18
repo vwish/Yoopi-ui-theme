@@ -13,8 +13,10 @@
 
 #myaccount_info {
     float: left;
-    margin-top: 20px;
     line-height: 0px;
+    color: #747f95;
+    margin-top: 0;
+    padding-top: 10px;
 }
 
 #myaccount_info > .arrow {
@@ -23,6 +25,7 @@
     border-color: #BFBFBF transparent transparent transparent;
     float: left;
     margin: 3px 10px 0 10px;
+    display: none;
 }
 
 #myaccount_info a {
@@ -63,3 +66,7 @@
     color: #bfbfbf;
     cursor: not-allowed;
 }
+
+
+.dropdown-menu { background-color: #1e293d !important; }
+.nav.secondary-nav.links li a {  line-height: 28px;}

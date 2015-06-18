@@ -5,15 +5,19 @@
                 <div class="welcome_header">
                     <h1>${_t('welcome_to_your_voip')}</h1>
                 </div>
-                <div class="content_title">
-                    <div>${_t('account_info')}</div>
-                    <div>${_t('numbers')}</div>
-                </div>
-                <div class="content">
-                    <div class="content_half left_div">
+                
+                <div class="content row">
+
+                    <div class="content_half left_div col-lg-12">
+
+                    <h2>${_t('account_info')}</h2>
+
                         <div class="content_block ">
                             <div class="content_line account">
-                                <div class="icon medium account"></div>${_t('account')} <span class="text field account_name">${account_name}</span><span class="right"><div class="edit_icon" data-module="account"></div></span>
+                                <div class="icon medium account"></div>
+                                <h3>${_t('account')} <span class="text field account_name">${account_name}</span></h3>
+                                <span class="right">
+                                <div class="edit_icon" data-module="account"></div></span>
                             </div>
                         </div>
                         <div class="content_block">
@@ -37,8 +41,12 @@
                         </div>
                     </div>
 
-                    <div class="content_half right_div">
+                    <div class="content_half right_div col-lg-12">
+
+                    <h2>${_t('numbers')}</h2>
+
                         <div class="content_block">
+
                             <div class="content_line">
                                 <div class="icon medium device"></div>${_t('devices')}<span class="right"><span class="number field devices">${devices}</span><div class="edit_icon" data-module="device"></div></span>
                             </div>
@@ -73,6 +81,7 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
                 <div class="clear"/>
             </div>

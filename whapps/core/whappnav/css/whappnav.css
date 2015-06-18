@@ -8,11 +8,12 @@
     width: 2px;
     background-image: url(../img/nav_line.jpg);
     background-repeat: repeat-y;
+    display: none;
 }
 
 #ws-topbar .whapps > .whapp {
-    width: 120px;
-    text-align: center;
+    width: 100%;
+    text-align: left;
 }
 
 #ws-topbar .whapps > .whapp.disabled {
@@ -20,7 +21,7 @@
 }
 
 #ws-topbar .whapps > .whapp.disabled a:hover {
-    background: #464646;
+    background: #131E30;
     color: #bfbfbf;
     cursor: not-allowed;
 }
@@ -38,27 +39,27 @@
 }
 
 #ws-topbar .whapps > .whapp > a:hover {
-    background: #414141;
-    background: -moz-radial-gradient(center, ellipse cover,  #414141 50%, #343434 100%);
+    background: #131E30 !important;
+   /* background: -moz-radial-gradient(center, ellipse cover,  #414141 50%, #343434 100%);
     background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(50%,#414141), color-stop(100%,#343434));
     background: -webkit-radial-gradient(center, ellipse cover,  #414141 50%,#343434 100%);
     background: -o-radial-gradient(center, ellipse cover,  #414141 50%,#343434 100%);
     background: -ms-radial-gradient(center, ellipse cover,  #414141 50%,#343434 100%);
     background: radial-gradient(center, ellipse cover,  #414141 50%,#343434 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#414141', endColorstr='#343434',GradientType=1 );
-    color: #05ADDC;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#414141', endColorstr='#343434',GradientType=1 );*/
+    color: #ffffff;
 }
 
 #ws-topbar .whapps > .whapp > a.activate {
-    background: #414141;
-    background: -moz-radial-gradient(center, ellipse cover,  #414141 50%, #343434 100%);
+    background: #131E30;
+   /* background: -moz-radial-gradient(center, ellipse cover,  #414141 50%, #343434 100%);
     background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(50%,#414141), color-stop(100%,#343434));
     background: -webkit-radial-gradient(center, ellipse cover,  #414141 50%,#343434 100%);
     background: -o-radial-gradient(center, ellipse cover,  #414141 50%,#343434 100%);
     background: -ms-radial-gradient(center, ellipse cover,  #414141 50%,#343434 100%);
     background: radial-gradient(center, ellipse cover,  #414141 50%,#343434 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#414141', endColorstr='#343434',GradientType=1 );
-    color: #05ADDC;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#414141', endColorstr='#343434',GradientType=1 );*/
+    color: #ffffff;
 }
 
 #ws-topbar .whapps > .whapp > .dropdown-toggle::after {
@@ -76,3 +77,5 @@
 #ws-topbar .whapps > .whapp .category > .dropdown-menu {
     left: 160px;
 }
+
+.list-panel-anchor {  width: 100% !important;}

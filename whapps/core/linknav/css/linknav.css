@@ -28,4 +28,5 @@
     width: 2px;
     background-image: url(../img/nav_line.jpg);
     background-repeat: repeat-y;
+    display: none;
 }

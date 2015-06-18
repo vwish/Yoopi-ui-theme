@@ -1,20 +1,32 @@
 /* New CSS */
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 html {
     height: 100%;
 }
+
+/*
+font-family: 'Lato', sans-serif;
+font-family: 'Open Sans', sans-serif;*/
 
 body {
     height: 100%;
     color: #EBEBEB;
     font-size: 12px;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    /*font-family: Helvetica, Arial, sans-serif;*/
 }
 
 body > .topbar {
     position: absolute;
-    min-width: 1029px;
+   /* min-width: 1029px;*/
     height: 72px;
-    box-shadow: 0px 2px 2px #222;
+    /*box-shadow: 0px 2px 2px #222;*/
 }
 
 body > .topbar .topbar-inner {
@@ -27,7 +39,7 @@ body > .topbar .topbar-inner > .container-fluid {
 
 #ws-topbar .brand.logo {
     padding: 10px 21px;
-    width: 150px;
+    width: 100%;
     height: 52px;
     background-position: center center;
     /*background-image: url(../../../../config/images/logo.png);*/
@@ -36,6 +48,7 @@ body > .topbar .topbar-inner > .container-fluid {
 
 #ws-topbar .nav > li a {
     white-space: nowrap;
+      color: #fff;
 }
 
 #ws-topbar .nav > li .dropdown-menu {
@@ -43,7 +56,7 @@ body > .topbar .topbar-inner > .container-fluid {
 }
 
 #ws-topbar .nav > li > .dropdown-menu {
-    top: 72px;
+    top: 0px;
     text-align: left;
 }
 
@@ -77,9 +90,11 @@ body > .topbar .topbar-inner > .container-fluid {
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0;
+    left: 220px;
     padding-top: 72px;
     height: auto;
+   /* background-color: #fff; */
+   background-color: #fff;
 }
 
 .main_content {
@@ -96,19 +111,19 @@ body > .topbar .topbar-inner > .container-fluid {
 }
 
 .container-fluid > .sidebar.list_panel {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
-    width: 192px;
+    width: 100%;
     height: auto;
 }
 
 .container-fluid > .content {
-    margin-left: 212px;
+    margin-left: 0px;
 }
 
 .background {
-    background-color: #6E7377;
+    background-color: #ffffff;
     background-image: url(../images/bg.jpg);
     background-repeat: repeat-x;
 }
@@ -223,14 +238,14 @@ body > .topbar .topbar-inner > .container-fluid {
     padding: 5px 10px;
     height: 18px;
     border: solid 1px #333333;
-    border-radius: 5px;
+    http://learnmongodbthehardway.com/border-radius: 5px;
     box-shadow: 1px 1px 2px #555555;
     color: #dfdfdf !important;
     text-decoration: none;
     line-height: 18px;
     user-select: none;
     -moz-user-select: none;
-    -khtml-user-select: none;
+    http://learnmongodbthehardway.com/-khtml-user-select: none;
 }
 
 .fancy_button:hover, .fancy_button:focus {
@@ -499,3 +514,71 @@ button.fancy_button {
     border: 0;
     background: 0;
 }
+
+.topbar.navigation { position: fixed !important; width: 220px !important;      min-width: inherit !important; height: 100%;overflow-y: auto;/*background-color: #191547;*/background-color:#303641; top: 50px;/*border-top: 1px dashed #2dc4e9;*/}
+.topbar div>ul, .nav {margin:0;}
+.topbar h3 a, .topbar .brand { margin-left: inherit;}
+.icon { margin-right: 14px; }
+div#secondarnav {background-color: #1e293d; border-bottom: 1px dashed #191547;left: 220px;position: fixed;right: 0;top: 0;z-index: 999;height:50px;}
+ul li:nth-child(2) { display: none;}
+a.menu::after, .dropdown-toggle::after{ display: none;}
+#secondarnav .nav.secondary-nav.links .dropdown-menu {  margin-right: 0 !important;   top: 50px; }
+
+  /*========================== Header ==================================*/
+header {
+    background: #131e30 none repeat scroll 0 0;
+   /* height: 73px;*/
+      height: 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+}
+
+div#ws-topbar {
+    width: 100%;
+   /* height: auto; */
+    height: inherit;
+}
+
+a.brand.logo {
+    /* padding: 12px 125px !important;
+    line-height: 78px; */
+     padding: 3px 58px !important;
+     line-height: 52px;
+}
+
+
+.ws-topbar .dropdown-menu {left: 249px;}
+#secondarnav .left { /*background: #000 none repeat scroll 0 0;*/display: inline-block;
+    height: 100%;width: 40px;}
+
+#secondarnav .left a {  display: block; height: 100%;width: auto;  text-align: center;}
+#secondarnav .left a i.fa.fa-indent { color: #fff; font-size: 23px;}
+.collapsed-sidebar #ws-content {left: 50px;}
+.collapsed-sidebar .topbar.navigation { width: 50px !important;}
+.nav.whapps { width: 100%;}
+.topbar-inner { display: block;height: 100%;width: 100%;}
+.collapsed-sidebar .headerlogo {  display: inline-block; /*width: 50px !important;*/}
+.collapsed-sidebar div#secondarnav{left: 50px;}
+
+.ws-topbar .nav.whapps .activate {
+    background-color: #05addc !important;
+    color: #fff !important;
+}
+.content_half h2 { text-align: center;}
+.content_line.account h3 { display: inline-block;font-size: 20px;margin: 0;padding: 0;}
+.topbar div > ul > li, .nav > li {
+    border-bottom-color: #222;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    display: block;
+    float: left;
+}
+.nav.secondary-nav > li { border: none;}
+/*======================== Media queries =====================================*/
+@media (max-width: 767px) {
+    .topbar.navigation { width: 50px !important;}
+    #ws-content {left: 50px;}
+    div#secondarnav{left: 50px;}
+
+    }
