@@ -16,3 +16,23 @@
 
 .portal-view .bottom_part { border-top: 1px solid #555; float: left; width: 100%;padding: 20px;}
 #port_number .wizard_buttons { height: 43px;text-align: right;padding: 15px 20px 0;}
+
+
+
+/*-----inline-----code-----*/
+<div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable" tabindex="-1" role="dialog" aria-labelledby="ui-dialog-title-3" style="display: block; z-index: 20002; outline: 0px; height: auto; width: 600px; top: 76px; left: 300px;">
+
+
+
+
+div#secondarnav {
+  background-color: #CECEC6;
+  border-bottom: 1px solid #dfdfdf;
+  left: 220px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  border: -2px solid #999;
+  height: 50px;
+}

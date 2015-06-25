@@ -8,6 +8,7 @@
 #voip_welcome-view {
     text-align: center;
     padding-bottom: 20px;
+    
 }
 
 #voip_welcome-view #voip_api_url {
@@ -25,6 +26,7 @@
       color: #EA2C46;
       font-size: 30px;
       text-shadow: inherit;
+      font-weight: 600;
 }
 
 #voip_welcome-view .welcome_div .welcome_header {
@@ -50,10 +52,12 @@
 
 #voip_welcome-view .welcome_div .content .title {
     color: #05addc;
+   min-width: 105px;
+  display: inline-block;
 }
 
 #voip_welcome-view .welcome_div .content .content_block.hoverable:hover {
-    box-shadow: inset 0px 0px 50px 0px #666;
+    /*box-shadow: inset 0px 0px 50px 0px #666;*/
     cursor: pointer;
 }
 
@@ -103,7 +107,7 @@
 
 #voip_welcome-view .welcome_div .content .content_block .edit_icon {
     display: inline-block;
-    background: url('images/edit_icon.png') no-repeat center;
+    /*background: url('images/edit_icon.png') no-repeat center;*/
     width: 20px;
     height: 18px;
     margin: 0 0 -3px 10px;

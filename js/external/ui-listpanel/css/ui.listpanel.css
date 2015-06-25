@@ -1,27 +1,19 @@
 /*List Panel*/
 
 .list_panel {
-    width: 190px;
-    box-shadow: 2px 2px 2px #222222;
+    width: 100%;
+    /*box-shadow: 2px 2px 2px #222222;*/
 }
 
 .add_flow {
     padding-top: 5px;
     height: 60px;
     border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: #222222;
+    border-bottom-style: dashed;
+    border-bottom-color: #072961;
     text-align: center;
     cursor: pointer;
-    background: rgb(90,90,90); /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(90,90,90,1) 0%, rgba(68,68,68,1) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(90,90,90,1)), color-stop(100%,rgba(68,68,68,1))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, rgba(90,90,90,1) 0%,rgba(68,68,68,1) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, rgba(90,90,90,1) 0%,rgba(68,68,68,1) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, rgba(90,90,90,1) 0%,rgba(68,68,68,1) 100%); /* IE10+ */
-    background: linear-gradient(top, rgba(90,90,90,1) 0%,rgba(68,68,68,1) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a5a5a', endColorstr='#444444',GradientType=0 ); /* IE6-9 */
-}
+   }
 
 .add_flow:hover {
     color: #05ADDC;
@@ -31,12 +23,19 @@
      background-position: 0px 25px;
 }
 
-.add_flow span{
-    display: inline-block;
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 60px;
+.add_flow span {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 60px;
+  color: #05ADDC;
+  font-size: 31px;
+  font-weight: 700;
 }
+
+i.fa.fa-plus-square { font-size: 30px;margin-right: 11px;color: #05ADDC;
+}
+
 
 .plus_btn {
     background-image: url(../images/plus_btn.png);
@@ -46,6 +45,7 @@
     margin-top: -4px;
     margin-right: 7px;
     vertical-align: middle;
+    display: none !important;
 }
 
 .search_box {
@@ -89,50 +89,38 @@
    We keep the old design for some templates (like ring groups, tables etc...) */
 .new_search_box {
   /*  height: 28px;*/
-    background-color:#444444;
+  
     padding: 10px 0 8px;
-    border-bottom: 1px solid #222;
+   
     text-align: center;
 }
 
 .new_search_box .icon_wrapper {
     width: 34px;
-    height: 26px;
+    height: 28px;
     float: left;
     border-radius: 0px 5px 5px 0px;
-    background: rgb(0,0,0); /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(34,34,34,1) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(100%,rgba(34,34,34,1))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(34,34,34,1) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(34,34,34,1) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(34,34,34,1) 100%); /* IE10+ */
-    background: linear-gradient(top, rgba(0,0,0,1) 0%,rgba(34,34,34,1) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#222222',GradientType=0 ); /* IE6-9 */
+    background-color: #05ADDC;
+    
 }
 
-.new_search_box .icon_wrapper .search_icon {
+/*.new_search_box .icon_wrapper .search_icon {
     width: 24px;
     height: 24px;
     padding: 0 5px;
     display: block;
     background: url(../images/new_search.png) no-repeat center center transparent;
-}
+}*/
+
+i.fa.fa-search { line-height: 29px; font-size: 17px;}
 
 .new_search_box .new_searchfield {
-    width: 141px;
+    /*width: 141px;*/
     margin-left: 5px;
-    border: medium none;
+    border: 1px solid #BEBCBC;
     color: #fff;
     float: left;
     border-radius: 5px 0 0 5px;
-    background: rgb(0,0,0); /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(34,34,34,1) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(100%,rgba(34,34,34,1))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(34,34,34,1) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(34,34,34,1) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(34,34,34,1) 100%); /* IE10+ */
-    background: linear-gradient(top, rgba(0,0,0,1) 0%,rgba(34,34,34,1) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#222222',GradientType=0 ); /* IE6-9 */
     padding:13px;
 }
 
@@ -146,9 +134,8 @@
 }
 
 .new_search_box .new_searchfield:focus {
-    box-shadow: none !important;
-    border: none;
-    border-color: transparent;
+
+      border: 1px solid #05ADDC;
 }
 /* End new search field design for list panel */
 
@@ -157,7 +144,7 @@
     -moz-opacity:0.8;
     -khtml-opacity: 0.8;
     opacity: 0.8;
-    background: #333;
+    /*background: #333;*/
     /*height: 490px;*/
     overflow: auto;
     outline: none;
@@ -169,15 +156,20 @@
 
 .list-panel-anchor ul{
     /*background-color:#989898;*/
+      float: left;
 
 }
 
 .list-panel-anchor ul li{
-    height:27px;
-    border-bottom: 1px solid #666666;
+    /*height:27px;*/
+    /*border-bottom: 1px solid #666666;*/
     list-style-type: none;
-    background-color:#333333;
-    display: inline-block;
+   /* background-color:#333333;*/
+     display: inline-block;
+     padding: 34px 55px;
+     float: left;
+     text-align: center !important;
+     transition-timing-function: ease-in
 }
 
 .list-panel-anchor ul li:first-child{
@@ -191,14 +183,16 @@
 .list-panel-anchor ul li a {
     line-height:26px;
     display:block;
-    height: 27px;
-    padding-left: 35px;
-    margin-right: 5px;
+   /* height: 27px;
+    padding-left: 35px;*/
+  /*  margin-right: 5px;*/
     overflow: hidden;
-    color: #ffffff;
+    color: #382E3D;
     text-decoration: none;
     white-space: nowrap;
     /*border-right: 1px solid #7a7a7a;*/
+    font-size: 18px;
+    font-weight: 200;
 }
 
 
@@ -222,3 +216,37 @@
 .ui-listpanel li a.action { position: absolute; right: 2px; top: 2px; }
 
 .ui-listpanel input.search { height: 14px; padding: 1px; opacity: 0.5; margin: 4px; width: 90%; }
+
+.list-panel-anchor ul li:nth-child(1):after{content: "\f07b";}
+.list-panel-anchor ul li:nth-child(2):after{content: "\f1e4";}
+.list-panel-anchor ul li:nth-child(3):after{content: "\f0c0";}
+.list-panel-anchor ul li:nth-child(4):after{content: "\f0a0";}
+.list-panel-anchor ul li:nth-child(5):after{content: "\f07c";}
+.list-panel-anchor ul li:nth-child(6):after{content: "\f148";}
+.list-panel-anchor ul li:nth-child(7):after{content: "\f03d";}
+.list-panel-anchor ul li:nth-child(8):after{content: "\f0c9";}
+.list-panel-anchor ul li:nth-child(9):after{content: "\f098";}
+.list-panel-anchor ul li:nth-child(10):after{content: "\f0e8";}
+.list-panel-anchor ul li:nth-child(11):after{content: "\f1e5";}
+.list-panel-anchor ul li:nth-child(12):after{content: "\f233";}
+.list-panel-anchor ul li:nth-child(13):after{content: "\f018";}
+.list-panel-anchor ul li:nth-child(14):after{content: "\f21b";}
+.list-panel-anchor ul li:nth-child(15):after{content: "\f007";}
+.list-panel-anchor ul li:nth-child(16):after{content: "\f0e0";}
+.list-panel-anchor ul li:hover:after { color: #fff;}
+.list-panel-anchor ul li:hover a { color: #fff; font-weight: 600;}
+
+  
+
+
+.list-panel-anchor ul li:after{
+   
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  font-size: 60px;
+  line-height: 78px;
+  color: #05ADDC;
+
+}

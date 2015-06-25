@@ -9,6 +9,8 @@
 
 #ws-topbar .links > .link > .dropdown-toggle::after {
     display: none;
+
+
 }
 
 #ws-topbar .links > .link .category > .dropdown-toggle::before {

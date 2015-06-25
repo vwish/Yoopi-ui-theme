@@ -12,9 +12,10 @@
 
                     <h2>${_t('account_info')}</h2>
 
-                        <div class="content_block ">
+                        <div class="col-lg-6">
+                            <div class="content_block ">
                             <div class="content_line account">
-                                <div class="icon medium account"></div>
+                            <span class="typicons-user"></span>
                                 <h3>${_t('account')} <span class="text field account_name">${account_name}</span></h3>
                                 <span class="right">
                                 <div class="edit_icon" data-module="account"></div></span>
@@ -33,6 +34,9 @@
                             <span class="carrier_wrapper">${_t('carrier')} <span class="right"><span class="text field carrier">${carrier}</span></span></span>
                             <div class="clear"/>
                         </div>
+
+                        </div>
+                        <div class="col-lg-6">
                         <div class="content_block">
                             <div class="account_bars">
                                 <div class="content_line">${_t('direct_sub_accounts')} <div class="bar_wrapper"><div class="progress_bar">&nbsp;</div><div class="number field children_accounts">${children_accounts}</div></div></div>
@@ -40,46 +44,70 @@
                             </div>
                         </div>
                     </div>
+                    </div>
 
                     <div class="content_half right_div col-lg-12">
 
                     <h2>${_t('numbers')}</h2>
 
-                        <div class="content_block">
+                        
+                        <div class="content_block hoverable col-lg-4" data-module="user">
+                            <div class="content_line align-middle">
+                               <!--  <div class="icon medium user"></div> -->
+                               <h2><span class="typicons-group"></span></h2>
+                               <h3 class="device-title usr">${_t('users')}</h3>
+                               <span class="right"><span class="number field users">${users}</span></span>
+                            </div>
+                        </div>
+                        <div class="content_block hoverable col-lg-4" data-module="vmbox">
+                            <div class="content_line align-middle">
+                             <h2><span class="maki-post"></span></h2>
+                             <h3 class="device-title usr">${_t('voicemail_boxes')}</h3>
+                              <span class="right"><span class="number field vmboxes">${vmboxes}</span></span>
+                            </div>
+                        </div>
+                        <div class="content_block hoverable col-lg-4" data-module="conference">
+                            <div class="content_line align-middle">
+                            <h2><span class="fontawesome-comments-alt"></span></h2>
+                             <h3 class="device-title usr">${_t('conferences')}</h3>
+                                <span class="right"><span class="number field conferences">${conferences}</span></span>
+                            </div>
+                        </div>
+                        <div class="content_block hoverable col-lg-4" data-module="featurecode">
+                            <div class="content_line align-middle">
+                            <h2><span class="iconicstroke-key-stroke"></span></h2>
+                            <h3 class="device-title usr"> ${_t('active_feature_codes')}</h3>
+                               <span class="right"><span class="number field feature_codes">${feature_codes}</span></span>
+                            </div>
+                        </div>
+                        <div class="content_block hoverable col-lg-4" data-module="callflow">
+                        
+                      
+                            <div class="content_line align-middle">
+                            <h2><span class="entypo-flow-cascade"></span></h2>
+                              <h3 class="device-title usr">${_t('callflows')}</h3>
+                                <span class="right"><span class="number field callflows">${callflows}</span></span>
+                            </div>
+                        </div>
 
-                            <div class="content_line">
-                                <div class="icon medium device"></div>${_t('devices')}<span class="right"><span class="number field devices">${devices}</span><div class="edit_icon" data-module="device"></div></span>
+                        <div class="content_block col-lg-4">
+
+                            <div class="content_line align-middle ">
+
+                               <span class="right">
+                                <div class="edit_icon" data-module="device"><span class="fontawesome-edit"></span></div>
+                                </span>
+                               <h2><span class="fontawesome-mobile-phone"></span></h2>
+                            <h3 class="device-title">${_t('devices')}</h3>
+                            <span class="number field devices">${devices}</span>
+
                             </div>
 
                             <div class="pie_chart_wrapper" id="pie_chart_wrapper">
 
                             </div>
                         </div>
-                        <div class="content_block hoverable" data-module="user">
-                            <div class="content_line">
-                                <div class="icon medium user"></div>${_t('users')}<span class="right"><span class="number field users">${users}</span></span>
-                            </div>
-                        </div>
-                        <div class="content_block hoverable" data-module="vmbox">
-                            <div class="content_line">
-                                <div class="icon medium vmbox"></div>${_t('voicemail_boxes')}<span class="right"><span class="number field vmboxes">${vmboxes}</span></span>
-                            </div>
-                        </div>
-                        <div class="content_block hoverable" data-module="conference">
-                            <div class="content_line">
-                                <div class="icon medium conference"></div>${_t('conferences')}<span class="right"><span class="number field conferences">${conferences}</span></span>
-                            </div>
-                        </div>
-                        <div class="content_block hoverable" data-module="featurecode">
-                            <div class="content_line">
-                                <div class="icon medium sip"></div>${_t('active_feature_codes')}<span class="right"><span class="number field feature_codes">${feature_codes}</span></span>
-                            </div>
-                        </div>
-                        <div class="content_block hoverable" data-module="callflow">
-                            <div class="content_line">
-                                <div class="icon medium callflow"></div>${_t('callflows')}<span class="right"><span class="number field callflows">${callflows}</span></span>
-                            </div>
-                        </div>
+                        
                     </div>
 
                 </div>

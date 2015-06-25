@@ -64,13 +64,13 @@
 
             // Do not create an "add" button if there is no label.
             if (this.options.new_entity_label) {
-                this.flow_div = $('<div class="add_flow"><span class="plus_btn" href="#"/><span class="add_flow_text">'+ this.options.new_entity_label +'</span></div>').appendTo(this.pane_wrapper);
+                this.flow_div = $('<div class="add_flow"><span class="plus_btn" href="#"/><i class="fa fa-plus-square"></i><span class="add_flow_text">'+ this.options.new_entity_label +'</span></div>').appendTo(this.pane_wrapper);
             }
 
             var search_html = '';
             search_html += '<div class="new_search_box">';
             search_html += '<input type="text" placeholder="Search" class="new_searchfield search" name="search">';
-            search_html += '<span class="icon_wrapper"><span class="search_icon"/></span>';
+            search_html += '<span class="icon_wrapper"><i class="fa fa-search"></i></span>';
             //search_html += '<div class="searchsubmit1"/>';
             //search_html += '<div class="searchsubmit2"/>';
             search_html += '<div class="clear"></div>';
@@ -264,6 +264,9 @@
             .blur(function() {
                 $(this).removeClass('ui-state-active');
             })*/
+
+
+
             input.keypress(function(e) {
                 if (e.keyCode == 13)
                     return false;
@@ -275,6 +278,5 @@
             });
         }
     });
-
 
 })(jQuery);

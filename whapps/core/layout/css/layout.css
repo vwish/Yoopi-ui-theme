@@ -1,3 +1,56 @@
+@import url(http://weloveiconfonts.com/api/?family=brandico|entypo|fontawesome|fontelico|iconicfill|iconicstroke|maki|openwebicons|typicons|zocial);
+
+/* brandico */
+[class*="brandico-"]:before {
+  font-family: 'brandico', sans-serif;
+}
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* fontelico */
+[class*="fontelico-"]:before {
+  font-family: 'fontelico', sans-serif;
+}
+
+/* iconicfill */
+[class*="iconicfill-"]:before {
+  font-family: 'IconicFill', sans-serif;
+}
+
+/* iconicstroke */
+[class*="iconicstroke-"]:before {
+  font-family: 'IconicStroke', sans-serif;
+}
+
+/* maki */
+[class*="maki-"]:before {
+  font-family: 'maki', sans-serif;
+}
+
+/* openwebicons */
+[class*="openwebicons-"]:before {
+  font-family: 'OpenWeb Icons', sans-serif;
+}
+
+/* typicons */
+[class*="typicons-"]:before {
+  font-family: 'Typicons', sans-serif;
+}
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
+
 /* New CSS */
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
@@ -22,6 +75,8 @@ body {
     /*font-family: Helvetica, Arial, sans-serif;*/
 }
 
+
+label, input, select, textarea {font-family: 'Open Sans', sans-serif !important;}
 body > .topbar {
     position: absolute;
    /* min-width: 1029px;*/
@@ -124,7 +179,7 @@ body > .topbar .topbar-inner > .container-fluid {
 
 .background {
     background-color: #ffffff;
-    background-image: url(../images/bg.jpg);
+/*    background-image: url(../images/bg.jpg);*/
     background-repeat: repeat-x;
 }
 
@@ -522,7 +577,7 @@ button.fancy_button {
 div#secondarnav {background-color: #1e293d; border-bottom: 1px dashed #191547;left: 220px;position: fixed;right: 0;top: 0;z-index: 999;height:50px;}
 ul li:nth-child(2) { display: none;}
 a.menu::after, .dropdown-toggle::after{ display: none;}
-#secondarnav .nav.secondary-nav.links .dropdown-menu {  margin-right: 0 !important;   top: 50px; }
+#secondarnav .nav.secondary-nav.links .dropdown-menu {  margin-right: 0 !important;   top: 45px; }
 
   /*========================== Header ==================================*/
 header {
@@ -565,7 +620,7 @@ a.brand.logo {
     background-color: #05addc !important;
     color: #fff !important;
 }
-.content_half h2 { text-align: center;}
+.content_half h2 { text-align: center;  font-weight: 500;}
 .content_line.account h3 { display: inline-block;font-size: 20px;margin: 0;padding: 0;}
 .topbar div > ul > li, .nav > li {
     border-bottom-color: #222;
@@ -575,6 +630,53 @@ a.brand.logo {
     float: left;
 }
 .nav.secondary-nav > li { border: none;}
+span.typicons-user { font-size: 70px;color: #05ADDC;   vertical-align: middle;  display: inline-block;}
+span { font-weight: normal;}
+
+
+/*======================  font- icons ========================================*/
+span.fontawesome-mobile-phone,span.maki-post,span.fontawesome-comments-alt,span.iconicstroke-key-stroke,span.entypo-flow-cascade {   vertical-align: middle; font-size: 90px;display: inline-block;color: #05ADDC;}
+h3.device-title {  font-size: 20px;
+  font-weight: 700;
+  display: block;
+  width: auto;
+  margin: 0 0 0 27px !important;
+  line-height: normal;
+  text-align: left;
+  float: left;}
+span.number.field.devices { float: right;}
+span.fontawesome-edit {font-size: 21px;color: green;}
+.account_bars {padding-top: 36px;}
+span.typicons-group {font-size: 90px;}
+.content_line.align-middle:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+#voip_welcome-view .welcome_div .content .content_block .pie_chart_wrapper {
+  width: 100%;
+  min-height: 119px;
+  margin: auto;
+  padding-top: 0px;
+  float: left;
+}
+#accounts_manager-view { width: 52%;}
+button.btn.success.endpoint.edit { background-color: #05ADDC;background-image: inherit !important;box-shadow: none !important;border-radius: 2px;}
+.input-small, input.small, textarea.small, select.small {
+  width: 167px;
+  padding: 13px !important;
+  background-color: #ffffff !important;
+  color: #000;
+  font-size: 13px;
+}
+#myaccount_help {
+  float: right;
+  width: 73px;
+  height: 73px;
+  display: none;
+}
+
+.align-middle {text-align: center; }
 /*======================== Media queries =====================================*/
 @media (max-width: 767px) {
     .topbar.navigation { width: 50px !important;}
@@ -582,3 +684,4 @@ a.brand.logo {
     div#secondarnav{left: 50px;}
 
     }
+
